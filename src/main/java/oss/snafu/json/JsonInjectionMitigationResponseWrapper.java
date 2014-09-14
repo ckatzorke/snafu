@@ -4,8 +4,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletOutputStream;
-import javax.servlet.ServletResponse;
 import javax.servlet.ServletResponseWrapper;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletResponseWrapper;
 
 /**
  *
@@ -18,9 +19,9 @@ import javax.servlet.ServletResponseWrapper;
  *
  */
 
-public class JsonInjectionMitigationResponseWrapper extends ServletResponseWrapper {
+public class JsonInjectionMitigationResponseWrapper extends HttpServletResponseWrapper {
 
-	public JsonInjectionMitigationResponseWrapper(ServletResponse response) {
+	public JsonInjectionMitigationResponseWrapper(HttpServletResponse response) {
 		super(response);
 	}
 

@@ -8,8 +8,15 @@ import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ * The Spring {@link HandlerInterceptor} based implementation of {@link JsonInjectionMitigationFilter}. When put in
+ * front of a controller handler it tries to find if the handler method is annotated with {@link ResponseBody} .
+ *
+ * @author ckatzorke
+ *
+ */
 public class JsonInjectionMitigationHandlerInterceptor implements HandlerInterceptor {
-	private static final String PRE = ")[}',\n";
+	public static final String PRE = ")[}',\n";
 
 	@Override
 	public void afterCompletion(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2, Exception arg3)
