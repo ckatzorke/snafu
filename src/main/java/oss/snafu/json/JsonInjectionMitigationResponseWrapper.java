@@ -27,7 +27,7 @@ public class JsonInjectionMitigationResponseWrapper extends HttpServletResponseW
 
 	private boolean prefixed = false;
 
-	private static final String PRE = ")[}',\n";
+	private static final String PRE = ")]}',\n";
 
 	@Override
 	public ServletOutputStream getOutputStream() throws IOException {
