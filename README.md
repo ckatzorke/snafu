@@ -9,7 +9,6 @@ This project provides to basic utilities to enable JsonInjectionMitigation for y
 The mitigation is provided by adding **)]}',\n** to the JSON response. See http://haacked.com/archive/2008/11/20/anatomy-of-a-subtle-json-vulnerability.aspx/ for more info.
 
 Additionally, the prefix is also used by [AngularJS](https://angularjs.org/) to prevent JSON injection.
-~~~
 
 ### oss.snafu.json.JsonInjectionMitigationFilter
 
