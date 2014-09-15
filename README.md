@@ -1,7 +1,7 @@
 # snafu
 
 
-Security, so it don't get to SNAFU
+Security, so it don't get to [SNAFU](http://en.wikipedia.org/wiki/Military_slang#SNAFU)
 
 ## JsonInjectionMitigation
 
